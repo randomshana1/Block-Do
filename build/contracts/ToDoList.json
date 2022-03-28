@@ -1,29 +1,41 @@
 {
   "contractName": "ToDoList",
-  "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/TodoList.sol\":\"ToDoList\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/TodoList.sol\":{\"keccak256\":\"0x858a388b4ba10cfa82013e46c703033e169620c748e80ddd5b35acc6d46e8727\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e997154502d747b33b4494c8d04647fcddf16b78e3f36ae898f841dd7ab60ad8\",\"dweb:/ipfs/Qmct4Hwz6YtPSsh13gJtdxxaPMesRGdjRKJhYjqeB7QPdF\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212205763e90684360877a496df82e0463bbff664220deed0f4c50ce41780f13aebab64736f6c634300080c0033",
-  "deployedBytecode": "0x6080604052600080fdfea26469706673582212205763e90684360877a496df82e0463bbff664220deed0f4c50ce41780f13aebab64736f6c634300080c0033",
-  "immutableReferences": {},
-  "generatedSources": [],
-  "deployedGeneratedSources": [],
-  "sourceMap": "63:25:1:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "63:25:1:-:0;;;;;",
-  "source": "// SPDX-License-Identifier:MIT\npragma solidity >=0.5.0<0.9.0;\n\ncontract ToDoList{\n    \n}\n",
-  "sourcePath": "/Users/shanajames/Downloads/Work/Block Do/contracts/TodoList.sol",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "taskCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"taskCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ToDoList.sol\":\"ToDoList\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ToDoList.sol\":{\"keccak256\":\"0x6bf74a54f0b89e048738daa14379febdce4f5ac5cb6141ae5cfdc9d810146b9e\",\"urls\":[\"bzz-raw://0f519e1e44bc6606fd38d4d358bb7162256d083b5f94203289ab94248157901f\",\"dweb:/ipfs/QmPLLi5nSPzD1oh27dkLhFBkR3t8pH4fFbFh2HWgrDxuyu\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008055348015601357600080fd5b506080806100226000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063b6cb58a514602d575b600080fd5b60336045565b60408051918252519081900360200190f35b6000548156fea265627a7a72315820130d3945bd2a6ab88975882de51f1b664d5141e207d713b961d2a63298440dae64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063b6cb58a514602d575b600080fd5b60336045565b60408051918252519081900360200190f35b6000548156fea265627a7a72315820130d3945bd2a6ab88975882de51f1b664d5141e207d713b961d2a63298440dae64736f6c63430005100032",
+  "sourceMap": "63:52:0:-;;;110:1;86:25;;63:52;8:9:-1;5:2;;;30:1;27;20:12;5:2;63:52:0;;;;;;;",
+  "deployedSourceMap": "63:52:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;63:52:0;;;;;;;;;;;;;;;;;;;86:25;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier:MIT\npragma solidity >=0.5.0<0.9.0;\n\ncontract ToDoList{\n    uint public taskCount = 0;\n\n}\n",
+  "sourcePath": "/Users/shanajames/Downloads/Work/Block Do/contracts/ToDoList.sol",
   "ast": {
-    "absolutePath": "project:/contracts/TodoList.sol",
+    "absolutePath": "project:/contracts/ToDoList.sol",
     "exportedSymbols": {
       "ToDoList": [
-        35
+        5
       ]
     },
-    "id": 36,
-    "license": "MIT",
+    "id": 6,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 34,
+        "id": 1,
         "literals": [
           "solidity",
           ">=",
@@ -34,92 +46,186 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "31:30:1"
+        "src": "31:30:0"
       },
       {
-        "abstract": false,
         "baseContracts": [],
-        "canonicalName": "ToDoList",
         "contractDependencies": [],
         "contractKind": "contract",
+        "documentation": null,
         "fullyImplemented": true,
-        "id": 35,
+        "id": 5,
         "linearizedBaseContracts": [
-          35
+          5
         ],
         "name": "ToDoList",
-        "nameLocation": "72:8:1",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 36,
-        "src": "63:25:1",
-        "usedErrors": []
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "taskCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 5,
+            "src": "86:25:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "86:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 3,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "110:1:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 6,
+        "src": "63:52:0"
       }
     ],
-    "src": "31:58:1"
+    "src": "31:85:0"
   },
   "legacyAST": {
-    "absolutePath": "project:/contracts/TodoList.sol",
-    "exportedSymbols": {
-      "ToDoList": [
-        35
-      ]
+    "attributes": {
+      "absolutePath": "project:/contracts/ToDoList.sol",
+      "exportedSymbols": {
+        "ToDoList": [
+          5
+        ]
+      }
     },
-    "id": 36,
-    "license": "MIT",
-    "nodeType": "SourceUnit",
-    "nodes": [
+    "children": [
       {
-        "id": 34,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.5",
-          ".0",
-          "<",
-          "0.9",
-          ".0"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "31:30:1"
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.5",
+            ".0",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "31:30:0"
       },
       {
-        "abstract": false,
-        "baseContracts": [],
-        "canonicalName": "ToDoList",
-        "contractDependencies": [],
-        "contractKind": "contract",
-        "fullyImplemented": true,
-        "id": 35,
-        "linearizedBaseContracts": [
-          35
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            5
+          ],
+          "name": "ToDoList",
+          "scope": 6
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "taskCount",
+              "scope": 5,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "86:4:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 3,
+                "name": "Literal",
+                "src": "110:1:0"
+              }
+            ],
+            "id": 4,
+            "name": "VariableDeclaration",
+            "src": "86:25:0"
+          }
         ],
-        "name": "ToDoList",
-        "nameLocation": "72:8:1",
-        "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 36,
-        "src": "63:25:1",
-        "usedErrors": []
+        "id": 5,
+        "name": "ContractDefinition",
+        "src": "63:52:0"
       }
     ],
-    "src": "31:58:1"
+    "id": 6,
+    "name": "SourceUnit",
+    "src": "31:85:0"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.12+commit.f00d7308.Emscripten.clang"
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x88aE92540619Fd9959d6Ca62BE80AF784C85023d",
+      "transactionHash": "0x49064b0094a65fa0329cb5fbd04fac11ec19e343c04ab33d15cb7a6038cf1c0d"
+    }
+  },
   "schemaVersion": "3.4.6",
-  "updatedAt": "2022-03-28T09:25:03.182Z",
+  "updatedAt": "2022-03-28T10:09:43.309Z",
+  "networkType": "ethereum",
   "devdoc": {
-    "kind": "dev",
-    "methods": {},
-    "version": 1
+    "methods": {}
   },
   "userdoc": {
-    "kind": "user",
-    "methods": {},
-    "version": 1
+    "methods": {}
   }
 }
